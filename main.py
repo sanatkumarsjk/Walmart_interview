@@ -1,7 +1,8 @@
 import sys
 import pandas as pd
 from theater import theater
-from assign_seat import assignSeat
+from optimal_allocation import assignSeat
+# from linear_allocation import assignSeat
 
 # read request from file
 # returns a list of requests
