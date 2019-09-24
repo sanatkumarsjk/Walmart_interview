@@ -27,4 +27,5 @@ def handle_requests():
     for i in range(len(requests[0])):
         allocations.append(optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)  )   #assigns seats as requested params(ID, seat_count,theare_object)
     pd.DataFrame(allocations).to_csv('Walmart.txt', sep='\t', index=False, header=None)
+    print(walmart.get_seats())
 handle_requests()
