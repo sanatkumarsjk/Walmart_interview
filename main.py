@@ -23,8 +23,8 @@ def handle_requests():
         return
     #new theater object
     walmart = theater("Walmart",(10,5))
+    allocations = []
     for i in range(len(requests[0])):
-        optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)     #assigns seats as requested params(ID, seat_count,theare_object)
-    print(walmart.get_seats())
-
+        allocations.append(optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)  )   #assigns seats as requested params(ID, seat_count,theare_object)
+    pd.DataFrame(allocations).to_csv('Walmart.txt', sep='\t', index=False, header=None)
 handle_requests()
