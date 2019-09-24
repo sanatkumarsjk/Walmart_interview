@@ -3,7 +3,7 @@ class optimalAllocation:
     def assign_seat(self, req_id: str, seat_count: int, theater: object) -> object:
         # if theater is full/seat_count overflows.
         if theater.get_unassigned_seats() < seat_count:
-            return (False, 0)
+            return [req_id]
         print("Searching for best seats for request: ", req_id)
         seats_to_be_allotted = seat_count
         seat_counter = 0
@@ -31,6 +31,7 @@ class optimalAllocation:
                 sections[0].append(i)
             else:
                 sections[2].append(i)
+
         for section in sections:
             proposed_seats = self.__check_seats_in_section(section, seat_count, available_slots, theater)
             if proposed_seats:

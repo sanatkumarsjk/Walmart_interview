@@ -32,6 +32,7 @@ class theater:
     def set_seats(self, row, column, request_id):
         if self.__seats[row][column] == None:
             self.set_available_seats(row, 1)
+            self.__unassigned_seats -=1
             self.__seats[row][column] = request_id
             return True
         return False
