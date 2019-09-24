@@ -1,11 +1,10 @@
 import sys
 import pandas as pd
 from theater import theater
-from optimal_allocation import assignSeat
+from optimal_allocation import optimalAllocation
 # from linear_allocation import assignSeat
 
-# read request from file
-# returns a list of requests
+#read request from file; returns a list of requests
 def read_requests():
     try:
         data = pd.read_csv(sys.argv[1],sep=' ', header = None)
@@ -24,9 +23,8 @@ def handle_requests():
         return
     #new theater object
     walmart = theater("Walmart",(10,5))
-    
     for i in range(len(requests[0])):
-        assignSeat.assign(requests[0][i],requests[1][i],walmart)     #assigns seats as requested params(ID, seat_count,theare_object)
+        optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)     #assigns seats as requested params(ID, seat_count,theare_object)
     print(walmart.get_seats())
 
 handle_requests()
