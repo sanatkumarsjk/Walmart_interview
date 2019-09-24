@@ -22,7 +22,7 @@ class theater:
     def get_unassigned_seats(self):
         return self.__unassigned_seats
 
-    def set_unassigned_seats(self,number):
+    def __set_unassigned_seats(self,number):
         self.__unassigned_seats -= number
 
     #theater structure
@@ -32,7 +32,7 @@ class theater:
     def set_seats(self, row, column, request_id):
         if self.__seats[row][column] == None:
             self.set_available_seats(row, 1)
-            self.__unassigned_seats -=1
+            self.__set_unassigned_seats(1)
             self.__seats[row][column] = request_id
             return True
         return False
