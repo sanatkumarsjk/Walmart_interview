@@ -1,7 +1,7 @@
 import sys
 import pandas as pd
 from theater import theater
-from optimal_allocation import optimalAllocation
+from weighted_scoring import optimalAllocation
 # from linear_allocation import assignSeat
 
 #read request from file; returns a list of requests
@@ -25,6 +25,6 @@ def handle_requests():
     walmart = theater("Walmart",(10,5))
     for i in range(len(requests[0])):
         optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)     #assigns seats as requested params(ID, seat_count,theare_object)
-    print(walmart.get_seats())
+    # print(walmart.get_seats())
 
 handle_requests()
