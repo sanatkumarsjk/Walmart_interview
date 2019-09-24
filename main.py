@@ -25,6 +25,6 @@ def handle_requests():
     walmart = theater("Walmart",(10,5))
     for i in range(len(requests[0])):
         optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)     #assigns seats as requested params(ID, seat_count,theare_object)
-    # print(walmart.get_seats())
+    print(walmart.get_seats())
 
 handle_requests()
