@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 from theater import theater
 from weighted_scoring import optimalAllocation
-from requests_parser import fileParser
+from requests_parser import txtParser
 # from linear_allocation import assignSeat
 
 #read request from file; returns a list of requests
