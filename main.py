@@ -22,15 +22,12 @@ def handle_requests():
     requests = read_requests()
     if not requests:
         return
-    walmart = theater("Walmart",(10,5))
-
-    x = fileParser()
-    input = x.parse(requests,walmart)
-    print(input)
     #new theater object
+    walmart = theater("Walmart",(10,5))
+    requests = fileParser().parse(requests,walmart)
     allocations = []
-    # for i in range(len(requests[0])):
-    #     allocations.append(optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)  )   #assigns seats as requested params(ID, seat_count,theare_object)
-    # pd.DataFrame(allocations).to_csv('Walmart.txt', sep='\t', index=False, header=None)
-    # print(walmart.get_seats())
+    for i in range(len(requests[0])):
+        allocations.append(optimalAllocation().assign_seat(requests[0][i],requests[1][i],walmart)  )   #assigns seats as requested params(ID, seat_count,theare_object)
+    pd.DataFrame(allocations).to_csv('Walmart.txt', sep='\t', index=False, header=None)
+    print(walmart.get_seats())
 handle_requests()
