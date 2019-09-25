@@ -31,7 +31,6 @@ class optimalAllocation:
                 sections[0].append(i)
             else:
                 sections[2].append(i)
-
         for section in sections:
             proposed_seats = self.__check_seats_in_section(section, seat_count, available_slots, theater)
             if proposed_seats:
