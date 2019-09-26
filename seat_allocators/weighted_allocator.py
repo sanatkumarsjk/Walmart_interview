@@ -1,6 +1,6 @@
 from seat_allocators.seat_allocator import SeatAllocator
 
-class OptimalAllocation(SeatAllocator):
+class WeightedAllocation(SeatAllocator):
 
     def assign_seat(self, req_id: str, seat_count: int, theater: object) -> object:
         # if theater is full/seat_count overflows.
@@ -11,7 +11,7 @@ class OptimalAllocation(SeatAllocator):
         seat_counter = 0
         allocated_seats = [req_id]
         while seats_to_be_allotted > 0 and seat_counter != seat_count:
-            proposed_seats = self.__check_availability(min(seat_count-seat_counter,seats_to_be_allotted), theater)
+            proposed_seats = self.__check_avail(min(seat_count-seat_counter,seats_to_be_allotted), theater)
             if proposed_seats:
                 for offset in range(min(seat_count-seat_counter,seats_to_be_allotted)):
                     theater.set_seats(proposed_seats[0], proposed_seats[1]+offset, req_id)
@@ -22,7 +22,7 @@ class OptimalAllocation(SeatAllocator):
         print("Seats allocated to request: ", req_id)
         return allocated_seats
 
-    def __check_availability(self, seat_count, theater):
+    def __check_avail(self, seat_count, theater):
         available_slots = theater.get_available_seats()
         theater_size = theater.get_size()[0]
         sections=[[],[],[]]

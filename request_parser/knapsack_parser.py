@@ -1,32 +1,30 @@
-class RequestParser:
+from request_parser.parser import RequestParser
+
+class Knapsack(RequestParser):
 
     def parse(self, req_list, theater):
         theater_size = theater.get_size()[0] * theater.get_size()[1]
-        req_list = self.knapSack(theater_size, req_list, req_list, len(req_list))
+        req_list = self.__knapSack(theater_size, req_list, len(req_list))
         return req_list
 
-    def knapSack(self, W, wt, val, n):
-        K = [[0 for w in range(W + 1)] for i in range(n + 1)]
+    def __knapSack(self, theater_size, req_list, n):
+        Ks = [[0 for theater_size in range(theater_size + 1)] for i in range(n + 1)]
         for i in range(n + 1):
-            for w in range(W + 1):
-                if i == 0 or w == 0:
-                    K[i][w] = 0
-                elif wt[i - 1][1] <= w:
-                    K[i][w] = max(val[i - 1][1] + K[i - 1][w - wt[i - 1][1]], K[i - 1][w])
-                else:
-                    K[i][w] = K[i - 1][w]
-
-        res = K[n][W]
-        ans = []
-        w = W
+            for theater_size in range(theater_size + 1):
+                if i == 0 or theater_size == 0:
+                    Ks[i][theater_size] = 0
+                elif req_list[i - 1][1] <= theater_size:
+                    Ks[i][theater_size] = max(req_list[i - 1][1] + Ks[i - 1][theater_size - req_list[i - 1][1]], Ks[i - 1][theater_size])
+                else: Ks[i][theater_size] = Ks[i - 1][theater_size]
+        best_req, max_seating = [], Ks[n][theater_size]
+        theater_size = theater_size
         for i in range(n, 0, -1):
-            if res <= 0:
+            if max_seating <= 0:
                 break
-            if res == K[i - 1][w]:
+            if max_seating == Ks[i - 1][theater_size]:
                 continue
             else:
-
-                ans.append(wt[i - 1])
-                res = res - val[i - 1][1]
-                w = w - wt[i - 1][1]
-        return ans
+                best_req.append(req_list[i - 1])
+                max_seating = max_seating - req_list[i - 1][1]
+                theater_size = theater_size - req_list[i - 1][1]
+        return best_req

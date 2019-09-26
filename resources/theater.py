@@ -1,12 +1,12 @@
 class theater:
-    def __init__(self, name, size):
+    def __init__(self, name, seats):
         self.__name = name
-        self.__size = size
-        self.__seats = [[None for _ in range(size[1])] for _ in range(size[0])]
-        self.__unassigned_seats = size[0]*size[1]
+        self.__size = (len(seats),len(seats[0]))
+        self.__seats = seats
+        self.__unassigned_seats = len(seats)*len(seats[0])
         self.__available_seat = {}
-        for i in range(size[0]):
-            self.__available_seat[i] = size[1]
+        for i in range(len(seats)):
+            self.__available_seat[i] = len(seats[0])
 
     #trivial data for theater
     def get_name(self):
@@ -30,10 +30,10 @@ class theater:
         return self.__seats
 
     def set_seats(self, row, column, request_id):
-        if self.__seats[row][column] == None:
+        if self.__seats[row][column].status == None:
             self.set_available_seats(row, 1)
             self.__set_unassigned_seats(1)
-            self.__seats[row][column] = request_id
+            self.__seats[row][column].status = request_id
             return True
         return False
 

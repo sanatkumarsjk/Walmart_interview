@@ -1,5 +1,7 @@
 import operator
-class RequestParser:
+from request_parser.parser import RequestParser
+
+class Backtracking(RequestParser):
 
     def __init__ (self):
         self.__max_possible_seating = 0
