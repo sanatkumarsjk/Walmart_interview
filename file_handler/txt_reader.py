@@ -1,9 +1,9 @@
 import traceback
 import pandas as pd
-from file_reader.file_reader import RequestReader
-from file_reader.validate_request import ValidateRequest
+from file_handler.file_reader import FileReader
+from file_handler.validate_request import ValidateRequest
 
-class TxtReader(RequestReader):
+class TxtReader(FileReader):
 
     def read_file(self, filename):
         try:
@@ -18,9 +18,3 @@ class TxtReader(RequestReader):
             print("Error occured while retriving the file")
             print(traceback.print_stack())
         return False
-
-
-
-
-
-

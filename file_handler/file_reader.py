@@ -1,6 +1,6 @@
 import abc
 
-class RequestReader(abc.ABC):
+class FileReader(abc.ABC):
     @abc.abstractmethod
     def read_file(self):
         pass
