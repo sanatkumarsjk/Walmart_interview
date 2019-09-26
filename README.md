@@ -15,9 +15,10 @@
    - CSI =  ![equation](http://www.sciweavers.org/tex2img.php?eq=\sum_{i=1}^{k}c_{i}^{2}%2Bc_{i}*seatVal_{i}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
      - k is number of groups formed for a request.
      - where c in number of people in group i.
-     - seatvalue if the value of seats in a group.
+     - seatVal is the value of seats in a group.
 
-##Execution steps
+## Execution steps
+
 Note: execution requires python 3.7.
 
 1. cd to Walmart_interview directory.
