@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7ccead6-cfbd-40d8-8609-0ac0affd4a5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/file_handler/file_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file_handler/txt_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_reader/file_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handler/file_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_reader/txt_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handler/txt_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_reader/validate_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handler/validate_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_handler/txt_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handler/txt_writer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -35,7 +32,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="6" />
-          <entry key="py" value="63" />
+          <entry key="py" value="64" />
           <entry key="txt" value="23" />
         </counts>
       </usages-collector>
@@ -43,22 +40,22 @@
         <counts>
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="63" />
+          <entry key="Python" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="115" />
-          <entry key="md" value="1782" />
-          <entry key="py" value="14921" />
-          <entry key="txt" value="1239" />
+          <entry key="md" value="2594" />
+          <entry key="py" value="15049" />
+          <entry key="txt" value="1345" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1782" />
-          <entry key="PLAIN_TEXT" value="1354" />
-          <entry key="Python" value="14921" />
+          <entry key="Markdown" value="2594" />
+          <entry key="PLAIN_TEXT" value="1460" />
+          <entry key="Python" value="15049" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -72,14 +69,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="170" selection-start-line="21" selection-start-column="170" selection-end-line="21" selection-end-column="170" />
+            <state relative-caret-position="484">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1569528989727" expanded="true" signature="1416:1422" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <marker date="1569540746340" expanded="true" signature="87:88" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="6" lean-forward="true" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="132">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -127,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file_handler/txt_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="352">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -136,12 +145,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="308">
-                <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <first_editor relative-caret-position="286">
+                <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               </first_editor>
               <second_editor />
             </state>
@@ -248,11 +257,12 @@
         <option value="$PROJECT_DIR$/file_handler/file_writer.py" />
         <option value="$PROJECT_DIR$/file_handler/file_reader.py" />
         <option value="$PROJECT_DIR$/file_handler/txt_reader.py" />
-        <option value="$PROJECT_DIR$/file_handler/txt_writer.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/input/test.txt" />
         <option value="$PROJECT_DIR$/file_handler/validate_request.py" />
+        <option value="$PROJECT_DIR$/input/test.txt" />
+        <option value="$PROJECT_DIR$/helper.py" />
+        <option value="$PROJECT_DIR$/file_handler/txt_writer.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -273,6 +283,11 @@
             <path>
               <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -487,7 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569494171263</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="readme updated, Validation done for negative seat requests.">
+      <created>1569539016887</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1569539016887</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Readme updated; exceution steps added.">
+      <created>1569539964102</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1569539964102</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -549,7 +578,9 @@
     <MESSAGE value="Request parser implemented and integrated ." />
     <MESSAGE value="Request parser optimized using 01 knapsack" />
     <MESSAGE value="Validation for input for string and blank inputs. Seat type added in theater class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation for input for string and blank inputs. Seat type added in theater class." />
+    <MESSAGE value="readme updated, Validation done for negative seat requests." />
+    <MESSAGE value="Readme updated; exceution steps added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme updated; exceution steps added." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/seat_allocator/__init__.py" />
@@ -675,31 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file_handler/txt_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/Walmart.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="170" selection-start-line="21" selection-start-column="170" selection-end-line="21" selection-end-column="170" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1569528989727" expanded="true" signature="1416:1422" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,18 +725,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/input/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="6" lean-forward="true" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="132">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_handler/txt_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1569540746340" expanded="true" signature="87:88" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="308">
-            <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <first_editor relative-caret-position="286">
+            <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

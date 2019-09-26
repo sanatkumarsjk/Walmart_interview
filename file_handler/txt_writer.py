@@ -14,4 +14,4 @@ class TxtWriter(FileWriter):
             output.append(temp[:-1])
         with open(cwd + '\output\Walmart.txt', 'w') as filehandle:
             filehandle.writelines("%s\n" % place for place in output)
-        return cwd + '\output\Walmart.txt'
+        return "\nOutput file is located at: "+ cwd + '\output\Walmart.txt'

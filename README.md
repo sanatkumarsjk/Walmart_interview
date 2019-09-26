@@ -11,7 +11,7 @@
    - How many of the requested seats are assigned next to each other.
    - Which section the alloted seat belong to; therater being divided in three section, viz. Top, Center, Bottom.
      - Customers prefer Center, Top and then Bottom section.
-6. Customer satisfaction can be clculated be following formula:
+6. Customer satisfaction of a group can be clculated be following formula:
    - CSI =  ![equation](http://www.sciweavers.org/tex2img.php?eq=\sum_{i=1}^{k}c_{i}^{2}%2Bc_{i}*seatVal_{i}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
      - k is number of groups formed for a request.
      - where c in number of people in group i.
@@ -21,6 +21,7 @@
 Note: execution requires python 3.7.
 
 1. cd to Walmart_interview directory.
-2. execute **python main.py <input_file_name>** 
+2. execute main.py with input file path as first argument.
+   - **E.g. python main.py <input_file_name>** 
 3. output file path is avaiable at path posted in command prompt/terminal.
 . 
