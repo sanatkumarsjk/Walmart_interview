@@ -1,5 +1,9 @@
-class assignSeat:
-    def assign(self, req_id, seat_count, theater):
+from seat_allocators.seat_allocator import SeatAllocator
+
+
+class LinearAllocation(SeatAllocator):
+
+    def assign_seat(self, req_id, seat_count, theater):
         available_slots = theater.get_available_seats()
         if seat_count in available_slots.values():
             row = list(available_slots.values()).index(seat_count)

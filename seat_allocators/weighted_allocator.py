@@ -1,10 +1,12 @@
-class optimalAllocation:
+from seat_allocators.seat_allocator import SeatAllocator
+
+class OptimalAllocation(SeatAllocator):
 
     def assign_seat(self, req_id: str, seat_count: int, theater: object) -> object:
         # if theater is full/seat_count overflows.
         if theater.get_unassigned_seats() < seat_count:
             return [req_id]
-        print("Searching for best seats for request: ", req_id)
+        print("Searching for best seats for request:", req_id)
         seats_to_be_allotted = seat_count
         seat_counter = 0
         allocated_seats = [req_id]
@@ -24,7 +26,7 @@ class optimalAllocation:
         available_slots = theater.get_available_seats()
         theater_size = theater.get_size()[0]
         sections=[[],[],[]]
-        for i in range(theater_size):
+        for i in range(theater_size-1,-1,-1):
             if i < theater_size*0.3:
                 sections[1].append(i)
             elif i < theater_size*0.7:
