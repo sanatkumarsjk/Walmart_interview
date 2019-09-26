@@ -1,6 +1,6 @@
 import operator
-import numpy as np
 class RequestParser:
+
     def __init__ (self):
         self.__max_possible_seating = 0
         self.dp = {}

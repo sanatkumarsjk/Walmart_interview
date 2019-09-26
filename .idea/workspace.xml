@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7ccead6-cfbd-40d8-8609-0ac0affd4a5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/seat_allocators/seat_allocator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request_parser/knapsack_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_reader/request_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_reader/file_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_reader/txt_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_reader/txt_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/request_parser/request_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/request_parser/request_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seat_allocators/linear_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/seat_allocators/linear_allocator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seat_allocators/weighted_scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/seat_allocators/weighted_allocator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +31,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="5" />
-          <entry key="py" value="38" />
+          <entry key="py" value="41" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
@@ -43,22 +39,22 @@
         <counts>
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="38" />
+          <entry key="Python" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="95" />
           <entry key="md" value="1024" />
-          <entry key="py" value="11853" />
-          <entry key="txt" value="965" />
+          <entry key="py" value="12436" />
+          <entry key="txt" value="1044" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="1024" />
-          <entry key="PLAIN_TEXT" value="1060" />
-          <entry key="Python" value="11853" />
+          <entry key="PLAIN_TEXT" value="1139" />
+          <entry key="Python" value="12436" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -72,11 +68,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -85,23 +90,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/test.txt">
+        <entry file="file://$PROJECT_DIR$/seat_allocators/weighted_allocator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="88">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/request_parser/request_parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1569470446662" expanded="true" signature="142:143" ph="..." />
+                <marker date="1569476969349" expanded="true" signature="37:42" ph="..." />
+                <marker date="1569476969349" expanded="true" signature="62:67" ph="..." />
+                <marker date="1569476969349" expanded="true" signature="124:125" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request_parser/knapsack_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -110,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/output/Walmart.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -119,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/request_parser/test_casegenerater.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -134,15 +149,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="8" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seat_allocators/weighted_allocator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -178,6 +184,8 @@
       <find>i</find>
       <find>__findMaximum</find>
       <find>print</find>
+      <find>wt</find>
+      <find>14</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,11 +219,14 @@
         <option value="$PROJECT_DIR$/file_reader/request_reader.py" />
         <option value="$PROJECT_DIR$/seat_allocators/seat_allocator.py" />
         <option value="$PROJECT_DIR$/seat_allocators/linear_allocator.py" />
-        <option value="$PROJECT_DIR$/request_parser/test_casegenerater.py" />
         <option value="$PROJECT_DIR$/file_reader/txt_reader.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/seat_allocators/weighted_allocator.py" />
+        <option value="$PROJECT_DIR$/request_parser/01_kanpsack_parser.py" />
+        <option value="$PROJECT_DIR$/request_parser/test_casegenerater.py" />
+        <option value="$PROJECT_DIR$/01_knapsack_parser.py" />
+        <option value="$PROJECT_DIR$/knapsack_parser.py" />
         <option value="$PROJECT_DIR$/input/test.txt" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/request_parser/request_parser.py" />
       </list>
     </option>
@@ -237,21 +248,6 @@
               <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
-              <item name="file_reader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Walmart_interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Walmart_interview" type="462c0819:PsiDirectoryNode" />
-              <item name="request_parser" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -261,12 +257,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/SSJK/Desktop/Walmart_interview/Walmart.txt" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SSJK\Desktop\Walmart_interview\resources" />
       <recent name="C:\Users\SSJK\Desktop\Walmart_interview\request_parser" />
+      <recent name="C:\Users\SSJK\Desktop\Walmart_interview\resources" />
       <recent name="C:\Users\SSJK\Desktop\Walmart_interview\input" />
       <recent name="C:\Users\SSJK\Desktop\Walmart_interview\seat_allocators" />
       <recent name="C:\Users\SSJK\Desktop\Walmart_interview\file_reader" />
@@ -284,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.test_casegenerater">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Walmart_interview" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -355,8 +351,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.test_casegenerater" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.theater" />
         <item itemvalue="Python.theater" />
         <item itemvalue="Python.main" />
@@ -444,19 +440,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569435858446</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Request parser implemented and integrated .">
+      <created>1569471643846</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569471643846</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49433428" visible="true" weight="0.17448777" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49433428" visible="true" weight="0.1749503" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.5056657" side_tool="true" weight="0.105750166" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="520" y="40" width="1016" height="773" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" auto_hide="true" x="520" y="40" width="1016" height="773" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
@@ -469,25 +471,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49433428" visible="true" weight="0.105750166" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Structure" order="2" sideWeight="0.5056657" side_tool="true" visible="true" weight="0.105750166" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
-      <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="520" y="30" width="1016" height="793" id="Terminal" order="2" type="WINDOWED" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.13597734" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -503,7 +486,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="Files classified by function in folders." />
     <MESSAGE value="txt reader done." />
-    <option name="LAST_COMMIT_MESSAGE" value="txt reader done." />
+    <MESSAGE value="Request parser implemented and integrated ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Request parser implemented and integrated ." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,31 +579,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/request_parser/test_casegenerater.py">
+    <entry file="file://$PROJECT_DIR$/output/Walmart.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seat_allocators/weighted_allocator.py">
+    <entry file="file://$PROJECT_DIR$/request_parser/test_casegenerater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request_parser/01_kanpsack_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="396">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/Walmart.txt">
+    <entry file="file://$PROJECT_DIR$/request_parser/knapsack_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="506">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seat_allocators/weighted_allocator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -628,18 +636,9 @@
         <state relative-caret-position="88">
           <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1569470446662" expanded="true" signature="142:143" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1569476969349" expanded="true" signature="37:42" ph="..." />
+            <marker date="1569476969349" expanded="true" signature="62:67" ph="..." />
+            <marker date="1569476969349" expanded="true" signature="124:125" ph="..." />
           </folding>
         </state>
       </provider>
