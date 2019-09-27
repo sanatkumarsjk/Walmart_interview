@@ -11,7 +11,7 @@ class TxtReader(FileReader):
             request = [list(i) for i in data.values]
             return ValidateRequest().validate(request)
         except FileNotFoundError:
-            print('Invalid file name; please provide valid file path as first argument. E.g. python main.py test.txt')
+            print('Invalid file name; please provide valid file path as first argument. E.g. python handle_requests.py test.txt')
         except pd.errors.EmptyDataError:
             print("File is empty")
         except:
