@@ -16,8 +16,7 @@ class HandleRequests:
         requests = knapsack_request_parser().parse(requests, walmart)     #parses file data
         allocations = []
         for i in range(len(requests)):
-            allocations.append(WeightedAllocation().assign_seat(requests[i][0],requests[i][1],walmart))   #assigns seats as requested params(ID, seat_count,theare_object)
-        # helper().display_seats(walmart.get_size()[0], walmart.get_size()[1], walmart.get_seats())
+            allocations.append(WeightedAllocation().assign_seat(requests[i][0],requests[i][1],walmart))
         return TxtWriter().write_file(allocations)
 
 print(HandleRequests().handle_requests())

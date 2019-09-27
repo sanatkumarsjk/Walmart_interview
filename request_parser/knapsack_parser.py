@@ -8,20 +8,20 @@ class Knapsack(RequestParser):
         return req_list
 
     def __knapSack(self, theater_size, req_list, n):
-        Ks = [[0 for theater_size in range(theater_size + 1)] for i in range(n + 1)]
+        ks = [[0 for theater_size in range(theater_size + 1)] for i in range(n + 1)]
         for i in range(n + 1):
             for theater_size in range(theater_size + 1):
                 if i == 0 or theater_size == 0:
-                    Ks[i][theater_size] = 0
+                    ks[i][theater_size] = 0
                 elif req_list[i - 1][1] <= theater_size:
-                    Ks[i][theater_size] = max(req_list[i - 1][1] + Ks[i - 1][theater_size - req_list[i - 1][1]], Ks[i - 1][theater_size])
-                else: Ks[i][theater_size] = Ks[i - 1][theater_size]
-        best_req, max_seating = [], Ks[n][theater_size]
+                    ks[i][theater_size] = max(req_list[i - 1][1] + ks[i - 1][theater_size - req_list[i - 1][1]], ks[i - 1][theater_size])
+                else: ks[i][theater_size] = ks[i - 1][theater_size]
+        best_req, max_seating = [], ks[n][theater_size]
         theater_size = theater_size
         for i in range(n, 0, -1):
             if max_seating <= 0:
                 break
-            if max_seating == Ks[i - 1][theater_size]:
+            if max_seating == ks[i - 1][theater_size]:
                 continue
             else:
                 best_req.append(req_list[i - 1])

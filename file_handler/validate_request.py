@@ -8,7 +8,7 @@ class ValidateRequest:
                 requests[i][1] = int(requests[i][1])
                 if requests[i][0][0] != 'R' or requests[i][1] < 0:
                     raise Exception()
-                i+=1
+                i += 1
             except:
                 print("Discarding request:", requests[i][0])
                 del requests[i]
